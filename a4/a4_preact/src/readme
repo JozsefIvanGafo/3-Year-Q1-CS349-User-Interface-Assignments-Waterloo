@@ -1,0 +1,37 @@
+# University of Waterloo / CS349 / F23 / Assignment 4
+
+# Student Contact
+
+    Name =József,
+    Family name=Iván Gafo,
+    Wat ID=21111635,
+    Email=jivangaf@uwaterloo.ca,
+
+# Code Structure:
+    
+
+## `src` Folder:
+*
+    1. `main.ts`: Main script.
+    2. `style.css`: Main CSS file.
+
+## `src/state` Folder:
+*
+    - We have Appstate containing the different signals for the program
+
+## `src/types` Folder:
+*
+    - We define the type .module.css  so it allow us to use css modules
+
+## `src/container` Folder:
+*
+    - `0_top`: Folder containing the module that handles the top div.
+    - `1_editor`: Folder containing the modules that handles the editor, left, and right div.
+    - `2_swatch`: Folder containing the module that handles the swatch_container div.
+    - `3_bot`: Folder containing the module that handles the bot div.
+
+
+# Use of external help
+*
+1. Use chat gpt to generate the translating functions for the colors (`src/translate_functions.ts`)
+2. Use of stackOverflow to avoid the warnings of the css modules (https://stackoverflow.com/questions/40382842/cant-import-css-scss-modules-typescript-says-cannot-find-module)

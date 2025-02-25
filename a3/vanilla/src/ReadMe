@@ -1,0 +1,39 @@
+# University of Waterloo / CS349 / F23 / Assignment 3
+
+# Student Contact
+
+    Name =József,
+    Family name=Iván Gafo,
+    Wat ID=21111635,
+    Email=jivangaf@uwaterloo.ca,
+
+# Code Structure:
+    
+
+## `src` Folder:
+*
+    1. `main.ts`: Main script.
+    2. `index.html`: HTML file.
+    3. `style.css`: CSS file.
+
+## `src/mvc` Folder:
+*
+    - Observer and Model code.
+
+## `src/container` Folder:
+*
+    - `0_top`: Folder containing the module that handles the top div.
+    - `1_editor`: Folder containing the modules that handles the editor, left, and right div.
+    - `2_swatch`: Folder containing the module that handles the swatch_container div.
+    - `3_bot`: Folder containing the module that handles the bot div.
+
+
+# Workarounds
+
+    The index.html outside of the src folder automatically redirects to the HTML found under the src folder.
+
+
+# Use of external help
+
+1. Chat gpt solve me a problem where the text fields where not respecting the 50px width (solved with box-sizing)
+2. Use of chat gpt on the constructor of  Right (located in 1_editor) to avoid a type error in _colour container (const [hue, sat, lum] = Array.from(document.querySelectorAll(".change-colour")) as [HTMLElement, HTMLElement, HTMLElement];)

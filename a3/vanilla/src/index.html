@@ -1,0 +1,69 @@
+<!--
+University of Waterloo 2023-24 / CS 349 / A3
+József Iván Gafo / WatId: 21111635 / jivangaf@uwaterloo.ca
+Description:
+Main html of the assignment3
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vanilla" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Vanilla</title>
+</head>
+<body>
+    <div class="root">
+        <!-- top container -->
+        <div class="top">
+            <button id="add">Add</button>
+            <button id="delete">Delete</button>
+        </div>
+
+        <!--  Editor container-->
+        <div class="editor">
+
+            <div class="left"></div>
+
+            <!-- right container-->
+            <div class="right">
+                <!-- change hue-->
+                <div class="change-colour" id="hue">
+                    <div class="text_container">Hue</div>
+                    <input type="number" id="hue_field" class="text_field" value="50">
+                    <input type="range" class="slider" min="0" max="360" value="50">
+                </div>
+
+                <!-- change sat-->
+                <div class="change-colour" id="sat">
+                    <div class="text_container">Sat</div>
+                    <input type="number" id="sat_field" class="text_field" value="50">
+                    <input type="range" class="slider" min="0" max="100" value="50">
+                </div>
+
+                <!-- change lum-->
+                <div class="change-colour" id="lum">
+                    <div class="text_container">Lum</div>
+                    <input type="number" id="lum_field" class="text_field" value="50">
+                    <input type="range" class="slider" min="0" max="100" value="50">
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- Swatch container-->
+        <div class="swatch_container">
+
+        </div>
+
+        <!--bot container-->
+        <div class="bot">
+            <div class="text_container"></div>
+
+        </div>
+    </div>
+    
+    <script type="module" src="./main.ts"></script>
+</body>
+</html>

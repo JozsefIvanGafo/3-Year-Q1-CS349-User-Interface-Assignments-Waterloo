@@ -1,0 +1,11 @@
+/*editor container*/
+.editor {
+  flex: 1;
+  background-color: whitesmoke;
+  /*inside layout*/
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;
+}
+

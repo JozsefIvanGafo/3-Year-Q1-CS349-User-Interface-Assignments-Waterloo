@@ -1,0 +1,17 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column; /* Set the main container to column layout */
+  height: 100vh; /* 100% of the viewport height */
+}
+
+
+.text{
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: right;
+}

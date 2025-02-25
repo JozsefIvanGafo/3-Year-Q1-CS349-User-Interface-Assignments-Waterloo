@@ -1,0 +1,52 @@
+/*right container*/
+.right {
+    flex: 1;
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    /* inside layout*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* y flex*/
+    align-items: center; /* x flex */
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .type-colour-selector{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+
+
+  .change-colour {
+    width: 100%; /* How much x axis takes the container*/
+    /*inside layout*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+ /* The text  */
+  .text{
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: right;
+    width: 50px;
+  }
+  .wrong_text{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: red;
+  }
+  
+
+  /*slider inside hue, sat and lum div*/
+  .slider {
+    flex-grow: 1;
+    align-self: center;
+  }
+  

@@ -1,0 +1,14 @@
+/*Bot container*/
+.bot{
+    /*this allow us to ignore the padding for the height*/
+    box-sizing: border-box;
+    height: 50px;
+    flex:0 0 auto;
+    background-color: lightgrey;
+    /*inner layout*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+  
+}

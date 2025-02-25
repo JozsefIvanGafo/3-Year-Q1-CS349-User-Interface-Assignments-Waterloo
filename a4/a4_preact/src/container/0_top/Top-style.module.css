@@ -1,0 +1,19 @@
+.top{
+    /*this allow us to ignore the padding for the height*/
+    box-sizing: border-box;
+    height: 50px;
+    flex:0 0 auto;
+    background-color: lightgrey;
+    /*inside layout*/
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  
+  }
+  .add,.delete {
+    width: 100px;
+    height: 25px;
+    font-family: sans-serif;
+  }
+  

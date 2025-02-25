@@ -1,0 +1,137 @@
+/* 
+University of Waterloo 2023-24 / CS 349 / A3
+József Iván Gafo / WatId: 21111635 / jivangaf@uwaterloo.ca
+Description:
+This module is in charge of running the main code of vanilla
+*/
+
+/*define layout of the root*/
+.root{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;/*all the viewport height*/
+}
+/*Containers*/
+/*top container*/
+.top{
+  /*this allow us to ignore the padding for the height*/
+  box-sizing: border-box;
+  height: 50px;
+  flex:0 0 auto;
+  background-color: lightgrey;
+  /*inside layout*/
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+}
+button[id="add"],
+button[id="delete"] {
+  width: 100px;
+  height: 25px;
+  font-family: sans-serif;
+
+}
+
+
+/*editor container*/
+.editor{
+  flex: 1;
+  background-color: whitesmoke;
+  /*inside layout*/
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 10px;  
+}
+  .left{
+    flex:1;
+    border: 2px solid black;
+  }
+
+  /*right container*/
+  .right{
+    flex: 1;
+    background-color:whitesmoke;
+    border: 2px solid grey;
+    /* inside layout*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;/* y flex*/
+    align-items: center;/* x flex */
+    padding: 10px;
+    gap: 10px;
+  }
+
+    .change-colour{
+      width: 100%;/* How much x axis takes the container*/
+      /*inside layout*/
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+      /*labels inside hue,sat and lum  so all are aligned*/
+      .change-colour .text_container{
+        width:32px;
+      }
+
+      /*inputs inside hue,sat and lum div*/
+      .text_field{
+        width: 50px;
+        box-sizing: border-box;
+      }
+      /*slider inside hue, sat and lum div*/
+      .slider{
+        flex-grow: 1;
+        align-self: center;
+      }
+    
+
+/*swatch container*/
+.swatch_container{
+  
+  flex: 1;
+  /*inside layout*/
+  display: flex;
+  flex-wrap: wrap;
+  
+  flex-direction: row;
+  align-content: flex-start;
+  align-items: flex-start;/*x*/
+  justify-content: flex-start;/*y*/
+  padding: 10px;
+  gap: 20px;
+
+}
+.swatch{
+  width: 50px;
+  height: 50px;
+  border: 1px solid lightgrey;
+
+}
+
+/*Bot container*/
+.bot{
+  /*this allow us to ignore the padding for the height*/
+  box-sizing: border-box;
+  height: 50px;
+  flex:0 0 auto;
+  background-color: lightgrey;
+  /*inner layout*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+
+}
+
+.text_container{
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: right;
+}
+

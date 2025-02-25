@@ -1,0 +1,2 @@
+origin	https://git.uwaterloo.ca/cs349-fall2023/jivangaf.git (fetch)
+origin	https://git.uwaterloo.ca/cs349-fall2023/jivangaf.git (push)
